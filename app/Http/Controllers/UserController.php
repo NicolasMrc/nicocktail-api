@@ -51,10 +51,12 @@ class UserController extends Controller
         $user->lastname = $request->lastname;
         $user->email = $request->email;
         $user->password = Hash::make($request->password);
+        $user->register_token = str_random(32);
+
+        $user->save();
 
         Mail::to($user->email)->send(new RegistrationConfirmation($user));
 
-        $user->save();
 
         return new JsonResponse($user);
     }
@@ -105,7 +107,7 @@ class UserController extends Controller
     public function login(Request $request){
         $user = User::where('email', $request->email)->first();
 
-        if($user && Hash::check($request->password, $user->password && $user->isVerified)){
+        if($user && Hash::check($request->password, $user->password)){
 
             if($user->role == 'admin'){
                 $user->api_token = str_random(32);
@@ -113,10 +115,19 @@ class UserController extends Controller
             }
 
             return new JsonResponse($user);
-        } else if(!$user->isVerified){
-            return new JsonResponse(null, 205);
         } else {
             return new JsonResponse(null, 204);
         }
+    }
+
+    public function verify($id, $token){
+        $user = User::where('id', $id)->first();
+
+        if($user->register_token == $token){
+            $user->is_verified = true;
+            $user->save();
+        }
+
+        return new JsonResponse($user);
     }
 }

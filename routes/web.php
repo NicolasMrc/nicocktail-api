@@ -110,3 +110,5 @@ Route::post('user', 'UserController@store');
 Route::put('user', 'UserController@update');
 
 Route::delete('user/{id}', 'UserController@destroy');
+
+Route::get('verify/{id}/{token}', 'UserController@verify');

@@ -12,6 +12,7 @@ class RegistrationConfirmation extends Mailable
     use Queueable, SerializesModels;
 
     public $user;
+    public $url;
 
     /**
      * Create a new message instance.
@@ -30,6 +31,9 @@ class RegistrationConfirmation extends Mailable
      */
     public function build()
     {
+        $this->url = 'https://nicocktail.nicolasmercier.io/verify/' . $this->user->id . '/' . $this->user->register_token;
+        //$this->url = 'http://localhost:4200/verify/' . $this->user->id . '/' . $this->user->register_token;
+
         return $this
             ->from('hello@nicolasmercier.io')
             ->view('emails.register.confirmation');

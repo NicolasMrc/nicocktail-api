@@ -29,7 +29,7 @@ class CreateUserTable extends Migration
             $table->string('role')->default('user');
             $table->string('api_token')->nullable();
             $table->string('register_token')->default(str_random(32));
-            $table->boolean('isVerified')->default(false);
+            $table->boolean('is_verified')->default(false);
             $table->timestamps();
         });
     }

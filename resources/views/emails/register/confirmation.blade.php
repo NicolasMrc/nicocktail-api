@@ -5,7 +5,7 @@
             <h1 style="">Welcome {{ $user->firstname }}</h1>
             <p>Thanks you for signing up for Nicocktail !</p>
             <p>Please verify Your Email Address by clicking the button below.</p>
-            <a href="https://nicocktail-api.nicolasmercier.io/{{ $user->register_token }}"><div class="button">Confirm my account</div></a>
+            <a href="{{ $url }}"><div class="button">Confirm my account</div></a>
         </div>
         <div class="block-2">
             <p>Nicocktail Team</p>

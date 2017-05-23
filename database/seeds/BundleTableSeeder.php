@@ -68,5 +68,6 @@ class BundleTableSeeder extends Seeder
         $bundle->softs()->save(Soft::where('name', 'Lime Juice')->first());
         $bundle->alcohols()->save(Alcohol::where('name', 'Vodka')->first());
         $bundle->alcohols()->save(Alcohol::where('name', 'Triple Sec')->first());
+
     }
 }
