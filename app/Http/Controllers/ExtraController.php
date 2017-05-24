@@ -51,7 +51,6 @@ class ExtraController extends Controller
         $extra = Extra::where('id', $request->id)->first();
 
         $extra->name = $request->name;
-        $extra->price = $request->price;
 
         $extra->save();
 
