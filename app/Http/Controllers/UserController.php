@@ -53,6 +53,7 @@ class UserController extends Controller
         $user->password = Hash::make($request->password);
         $user->register_token = str_random(32);
 
+
         $user->save();
 
         Mail::to($user->email)->send(new RegistrationConfirmation($user));
