@@ -20,5 +20,8 @@ class ExtraTableSeeder extends Seeder
         DB::table('extra')->insert([
             'name' => 'Fresh Mint',
         ]);
+        DB::table('extra')->insert([
+            'name' => 'Cherry',
+        ]);
     }
 }

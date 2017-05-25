@@ -56,5 +56,17 @@ class AlcoholTableSeeder extends Seeder
             'degree' => '35',
         ]);
 
+        DB::table('alcohol')->insert([
+            'name' => 'Jägermeister',
+            'degree' => '39',
+        ]);
+
+        DB::table('alcohol')->insert([
+            'name' => 'Coconut cream',
+            'degree' => '20',
+        ]);
+
+
+
     }
 }

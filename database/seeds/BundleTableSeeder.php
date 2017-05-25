@@ -69,5 +69,29 @@ class BundleTableSeeder extends Seeder
         $bundle->alcohols()->save(Alcohol::where('name', 'Vodka')->first());
         $bundle->alcohols()->save(Alcohol::where('name', 'Triple Sec')->first());
 
+        $bundle = Bundle::create([
+            'name' => 'Pinacolada',
+            'description' => 'Some Pinacolada description',
+            'image' => 'pinacolada.png',
+            'price' => 38,
+            'discount' => 0,
+        ]);
+
+        $bundle->softs()->save(Soft::where('name', 'Pineapple Juice')->first());
+        $bundle->alcohols()->save(Alcohol::where('name', 'Rhum')->first());
+        $bundle->alcohols()->save(Alcohol::where('name', 'Coconut cream')->first());
+        $bundle->extras()->save(Extra::where('name', 'Cherry')->first());
+
+        $bundle = Bundle::create([
+            'name' => 'JägerBomb',
+            'description' => 'Some JagerBomb description',
+            'image' => 'jagerbomb.png',
+            'price' => 35,
+            'discount' => 0,
+        ]);
+
+        $bundle->softs()->save(Soft::where('name', 'Energy Drink')->first());
+        $bundle->alcohols()->save(Alcohol::where('name', 'Jägermeister')->first());
+
     }
 }

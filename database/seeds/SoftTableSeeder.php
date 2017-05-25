@@ -48,5 +48,15 @@ class SoftTableSeeder extends Seeder
             'name' => 'Cranberries Juice',
             'type' => 'Juice',
         ]);
+
+        DB::table('soft')->insert([
+            'name' => 'Pineapple Juice',
+            'type' => 'Juice',
+        ]);
+
+        DB::table('soft')->insert([
+            'name' => 'Energy Drink',
+            'type' => 'Soda',
+        ]);
     }
 }
