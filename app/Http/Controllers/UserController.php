@@ -68,6 +68,7 @@ class UserController extends Controller
         $user->firstname = $request->input('firstname');
         $user->lastname = $request->input('lastname');
         $user->email = $request->input('email');
+        $user->is_subscriber = $request->input('is_subscriber');
 
         if($user->address == null){
             $user->address()->save(new Address());

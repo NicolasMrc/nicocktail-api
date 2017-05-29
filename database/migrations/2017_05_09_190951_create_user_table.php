@@ -30,6 +30,7 @@ class CreateUserTable extends Migration
             $table->string('api_token')->nullable();
             $table->string('register_token')->default(str_random(32));
             $table->boolean('is_verified')->default(false);
+            $table->integer('is_subscriber')->nullable();
             $table->timestamps();
         });
     }
