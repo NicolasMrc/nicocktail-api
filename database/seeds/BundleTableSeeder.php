@@ -17,7 +17,7 @@ class BundleTableSeeder extends Seeder
     {
         $bundle = Bundle::create([
             'name' => 'Blue Lagoon',
-            'description' => 'Some blue lagoon description',
+            'description' => 'Acid cocktail loved for its deep blue color',
             'image' => 'blue_lagoon.png',
             'price' => 35,
             'discount' => 0,
@@ -30,7 +30,7 @@ class BundleTableSeeder extends Seeder
 
         $bundle = Bundle::create([
             'name' => 'Tequila Sunrise',
-            'description' => 'Some Tequila Sunrise description',
+            'description' => 'This cocktail will bring summer in your glasses',
             'image' => 'tequila_sunrise.png',
             'price' => 30,
             'discount' => 0,
@@ -42,7 +42,7 @@ class BundleTableSeeder extends Seeder
 
         $bundle = Bundle::create([
             'name' => 'Mojito',
-            'description' => 'Some Mojito description',
+            'description' => 'The famous all loved cuban cocktail',
             'image' => 'mojito.png',
             'price' => 40,
             'discount' => 0,
@@ -58,7 +58,7 @@ class BundleTableSeeder extends Seeder
 
         $bundle = Bundle::create([
             'name' => 'Cosmopolitan',
-            'description' => 'Some Cosmopolitan description',
+            'description' => 'Even if they don\'t admit men love cosmo too!',
             'image' => 'cosmopolitan.png',
             'price' => 38,
             'discount' => 0,
@@ -71,7 +71,7 @@ class BundleTableSeeder extends Seeder
 
         $bundle = Bundle::create([
             'name' => 'Pinacolada',
-            'description' => 'Some Pinacolada description',
+            'description' => 'The pineapple pizza of the cocktails',
             'image' => 'pinacolada.png',
             'price' => 38,
             'discount' => 0,
@@ -84,7 +84,7 @@ class BundleTableSeeder extends Seeder
 
         $bundle = Bundle::create([
             'name' => 'JägerBomb',
-            'description' => 'Some JagerBomb description',
+            'description' => 'To be able to dance from 8pm to 8am',
             'image' => 'jagerbomb.png',
             'price' => 35,
             'discount' => 0,
