@@ -21,6 +21,7 @@ class CreateSoftTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('type');
+            $table->string('color');
             $table->timestamps();
         });
     }
