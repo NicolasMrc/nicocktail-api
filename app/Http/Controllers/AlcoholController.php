@@ -64,6 +64,7 @@ class AlcoholController extends Controller
 
     public function destroy($id){
         $alcohol = Alcohol::where('id', $id)->first();
-        $alcohol->delete();
+        $alcohol->enabled = false;
+        $alcohol->save();
     }
 }

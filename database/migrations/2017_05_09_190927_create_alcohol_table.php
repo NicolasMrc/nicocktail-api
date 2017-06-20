@@ -21,6 +21,7 @@ class CreateAlcoholTable extends Migration
             $table->string('name');
             $table->string('degree');
             $table->string('color');
+            $table->boolean('enabled');
             $table->timestamps();
         });
     }

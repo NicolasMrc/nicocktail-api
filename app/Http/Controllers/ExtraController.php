@@ -59,6 +59,7 @@ class ExtraController extends Controller
 
     public function destroy($id){
         $extra = Extra::where('id', $id)->first();
-        $extra->delete();
+        $extra->enabled = false;
+        $extra->save();
     }
 }

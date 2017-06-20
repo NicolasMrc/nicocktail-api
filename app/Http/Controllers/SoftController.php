@@ -62,6 +62,7 @@ class SoftController extends Controller
 
     public function destroy($id){
         $soft = Soft::where('id', $id)->first();
-        $soft->delete();
+        $soft->enabled = false;
+        $soft->save();
     }
 }

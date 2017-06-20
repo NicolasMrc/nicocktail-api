@@ -19,6 +19,7 @@ class CreateExtraTable extends Migration
         Schema::create('extra', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->boolean('enabled');
             $table->timestamps();
         });
     }

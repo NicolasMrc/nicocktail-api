@@ -13,15 +13,19 @@ class ExtraTableSeeder extends Seeder
     {
         DB::table('extra')->insert([
             'name' => 'Sugar',
+            'enabled' => true,
         ]);
         DB::table('extra')->insert([
             'name' => 'Limes',
+            'enabled' => true,
         ]);
         DB::table('extra')->insert([
             'name' => 'Fresh Mint',
+            'enabled' => true,
         ]);
         DB::table('extra')->insert([
             'name' => 'Cherry',
+            'enabled' => true,
         ]);
     }
 }
