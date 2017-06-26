@@ -14,19 +14,19 @@ class AlcoholTableSeeder extends Seeder
         DB::table('alcohol')->insert([
             'name' => 'Vodka',
             'degree' => '40',
-            'color' => 'transparent',
+            'color' => '#ffffff',
             'enabled' => false,
         ]);
         DB::table('alcohol')->insert([
             'name' => 'Gin',
             'degree' => '40',
-            'color' => 'transparent',
+            'color' => '#ffffff',
             'enabled' => true,
         ]);
         DB::table('alcohol')->insert([
             'name' => 'Tequila',
             'degree' => '40',
-            'color' => 'transparent',
+            'color' => '#ffffff',
             'enabled' => true,
         ]);
         DB::table('alcohol')->insert([
@@ -38,13 +38,13 @@ class AlcoholTableSeeder extends Seeder
         DB::table('alcohol')->insert([
             'name' => 'Rhum',
             'degree' => '40',
-            'color' => 'transparent',
+            'color' => '#ffffff',
             'enabled' => true,
         ]);
         DB::table('alcohol')->insert([
             'name' => 'Whisky',
             'degree' => '40',
-            'color' => 'transparent',
+            'color' => '#ffffff',
             'enabled' => true,
         ]);
 
@@ -72,7 +72,7 @@ class AlcoholTableSeeder extends Seeder
         DB::table('alcohol')->insert([
             'name' => 'Triple Sec',
             'degree' => '35',
-            'color' => 'transparent',
+            'color' => '#ffffff',
             'enabled' => true,
         ]);
 

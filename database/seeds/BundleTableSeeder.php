@@ -21,6 +21,7 @@ class BundleTableSeeder extends Seeder
             'image' => 'blue_lagoon.png',
             'price' => 35,
             'discount' => 0,
+            'is_custom' => false
         ]);
 
         $bundle->softs()->save(Soft::where('name', 'Lime Juice')->first());
@@ -34,6 +35,7 @@ class BundleTableSeeder extends Seeder
             'image' => 'tequila_sunrise.png',
             'price' => 30,
             'discount' => 0,
+            'is_custom' => false
         ]);
 
         $bundle->softs()->save(Soft::where('name', 'Orange Juce')->first());
@@ -46,6 +48,7 @@ class BundleTableSeeder extends Seeder
             'image' => 'mojito.png',
             'price' => 40,
             'discount' => 0,
+            'is_custom' => false
         ]);
 
         $bundle->softs()->save(Soft::where('name', 'Perrier')->first());
@@ -62,6 +65,7 @@ class BundleTableSeeder extends Seeder
             'image' => 'cosmopolitan.png',
             'price' => 38,
             'discount' => 0,
+            'is_custom' => false
         ]);
 
         $bundle->softs()->save(Soft::where('name', 'Cranberries Juice')->first());
@@ -75,6 +79,7 @@ class BundleTableSeeder extends Seeder
             'image' => 'pinacolada.png',
             'price' => 38,
             'discount' => 0,
+            'is_custom' => false
         ]);
 
         $bundle->softs()->save(Soft::where('name', 'Pineapple Juice')->first());
@@ -88,6 +93,7 @@ class BundleTableSeeder extends Seeder
             'image' => 'jagerbomb.png',
             'price' => 35,
             'discount' => 0,
+            'is_custom' => false
         ]);
 
         $bundle->softs()->save(Soft::where('name', 'Energy Drink')->first());

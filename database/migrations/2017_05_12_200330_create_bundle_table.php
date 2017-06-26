@@ -23,6 +23,7 @@ class CreateBundleTable extends Migration
             $table->string('image')->nullable(true);
             $table->float('price')->nullable(true);
             $table->float('discount')->nullable(true);
+            $table->float('is_custom')->nullable(true);
             $table->timestamps();
         });
 

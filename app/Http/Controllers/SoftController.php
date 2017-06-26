@@ -42,6 +42,7 @@ class SoftController extends Controller
         $soft->name = $request->name;
         $soft->type = $request->type;
         $soft->color = $request->color;
+        $soft->enabled = $request->enabled;
 
         $soft->save();
 
@@ -54,6 +55,7 @@ class SoftController extends Controller
         $soft->name = $request->name;
         $soft->type = $request->type;
         $soft->color = $request->color;
+        $soft->enabled = $request->enabled;
 
         $soft->save();
 

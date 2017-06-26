@@ -32,7 +32,7 @@ class BundleController extends Controller
 
     public function index()
     {
-        $bundles = Bundle::all();
+        $bundles = Bundle::where('is_custom', false)->get();
         return new JsonResponse($bundles);
     }
 

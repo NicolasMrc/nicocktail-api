@@ -41,6 +41,7 @@ class ExtraController extends Controller
 
         $extra->name = $request->name;
         $extra->price = $request->price;
+        $extra->enabled = $request->enabled;
 
         $extra->save();
 
@@ -51,6 +52,7 @@ class ExtraController extends Controller
         $extra = Extra::where('id', $request->id)->first();
 
         $extra->name = $request->name;
+        $extra->enabled = $request->enabled;
 
         $extra->save();
 

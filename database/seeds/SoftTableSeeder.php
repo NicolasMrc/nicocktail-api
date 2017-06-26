@@ -21,7 +21,7 @@ class SoftTableSeeder extends Seeder
         DB::table('soft')->insert([
             'name' => 'Soda Club',
             'type' => 'Soda',
-            'color' => 'transparent',
+            'color' => '#ffffff',
             'enabled' => true,
         ]);
         DB::table('soft')->insert([
@@ -33,19 +33,19 @@ class SoftTableSeeder extends Seeder
         DB::table('soft')->insert([
             'name' => 'Sugar Syrup',
             'type' => 'Syrup',
-            'color' => 'transparent',
+            'color' => '#ffffff',
             'enabled' => true,
         ]);
         DB::table('soft')->insert([
             'name' => 'Sprite',
             'type' => 'Soda',
-            'color' => 'transparent',
+            'color' => '#ffffff',
             'enabled' => true,
         ]);
         DB::table('soft')->insert([
             'name' => 'Perrier',
             'type' => 'Sparkling Water',
-            'color' => 'transparent',
+            'color' => '#ffffff',
             'enabled' => true,
         ]);
         DB::table('soft')->insert([

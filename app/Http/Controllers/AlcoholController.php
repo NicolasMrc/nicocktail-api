@@ -44,6 +44,7 @@ class AlcoholController extends Controller
         $alcohol->name = $request->name;
         $alcohol->degree = $request->degree;
         $alcohol->color = $request->color;
+        $alcohol->enabled = $request->enabled;
 
         $alcohol->save();
 
@@ -56,6 +57,7 @@ class AlcoholController extends Controller
         $alcohol->name = $request->name;
         $alcohol->degree = $request->degree;
         $alcohol->color = $request->color;
+        $alcohol->enabled = $request->enabled;
 
         $alcohol->save();
 
